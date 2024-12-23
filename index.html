@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Popup</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="hr_one">
+        <h1>Toast Popup</h1>
+      </header>
+      <main class="mn-one">
+        <div>
+          <select name="left" id="left">
+            <option value="Left">Left</option>
+            <option value="right">right</option>
+          </select>
+        </div>
+        <div>
+          <select name="bottom" id="bottom">
+            <option value="Bottom" selected>Bottom</option>
+            <option value="Top">Top</option>
+          </select>
+        </div>
+        <div>
+          <select name="Warning" id="Warning">
+            <option value="Warning" selected>Warning</option>
+            <option value="Message">Message</option>
+          </select>
+        </div>
+        <div class="in-text">
+          <input
+            class="tt-cy"
+            type="text"
+            placeholder="Enter Custom Message here..."
+          />
+        </div>
+        <div class="duration-sl">
+          <label for="range">Duration</label>
+          <input id="range" type="range" min="1" max="5" />
+        </div>
+        <button class="sw-tt">Show Toast</button>
+      </main>
+      <div class="mn-tt-pp hideMe">✔<span class="cy-tt">Welcome!!!</span>✖</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
